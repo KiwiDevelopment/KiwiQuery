@@ -6,20 +6,24 @@
     <LangVersion>latest</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
 
-    <PackageId>KiwiQuery</PackageId>
+    <PackageId>KiwiQuery.EFCore</PackageId>
     <Version>1.0.0</Version>
     <Authors>Dmytro Diakov</Authors>
     <Description>Assert the number of SQL queries EF Core executes in your integration tests. Catch N+1 problems before they hit production.</Description>
     <PackageTags>efcore;testing;assertions;sql;queries;integration-tests;n+1</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/ddiakow/KiwiQuery</RepositoryUrl>
+    <RepositoryUrl>https://github.com/KiwiDevelopment/KiwiQuery</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 

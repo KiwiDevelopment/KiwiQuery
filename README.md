@@ -16,7 +16,7 @@ guard.AssertCount(exact: 1);
 ## Installation
 
 ```
-dotnet add package KiwiQuery
+dotnet add package KiwiQuery.EFCore
 ```
 
 ## Requirements

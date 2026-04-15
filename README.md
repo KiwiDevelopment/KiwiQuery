@@ -1,6 +1,11 @@
 # KiwiQuery
 
-Assert the number of SQL queries EF Core executes in your integration tests. Catch N+1 problems before they hit production.
+Catch hidden EF Core queries before they hit production
+
+EF silently executed 15 queries instead of 2.
+Tests passed. No warnings.
+
+KiwiQuery fails your tests when query count unexpectedly grows.
 
 Tired of writing the same `DbCommandInterceptor` boilerplate in every project just to check if your endpoint makes too many queries? This is for you.
 
@@ -12,6 +17,11 @@ await client.GetAsync("/api/orders");
 
 guard.AssertCount(exact: 1);
 ```
+
+## Use cases:
+- Catch N+1 queries
+- Prevent query regressions
+- Assert EF SQL in tests
 
 ## Installation
 

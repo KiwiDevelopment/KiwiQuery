@@ -1,6 +1,4 @@
-# KiwiQuery
-
-Catch hidden EF Core queries before they hit production
+# KiwiQuery - A tiny guard that fails your tests when EF queries unexpectedly grow
 
 EF silently executed 15 queries instead of 2.
 Tests passed. No warnings.
